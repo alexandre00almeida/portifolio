@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Alexandre C. Almeida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="extensao_00.css">
+</head>
+<body class="page-body">
+
+<canvas id="particle-canvas"></canvas>
+<div id="overlay"></div>
+
+<aside id="sidebar" aria-label="Menu lateral">
+    <div class="sidebar-header">
+        <h1>Alexandre C. Almeida</h1>
+        <p class="subtitulo">Estudante de Tecnologia da Informação</p>
+    </div>
+    <nav class="sidebar-nav">
+        <ul>
+            <li><a href="index.html" target="_self"><span class="nav-icon">🏠</span>Início</a></li>
+            <li><a href="sobre.html" target="_self"><span class="nav-icon">👤</span>Sobre Mim</a></li>
+            <li><a href="habilidades.html" target="_self"><span class="nav-icon">⚡</span>Habilidades</a></li>
+            <li><a href="curiosidades.html" target="_self"><span class="nav-icon">🔍</span>Curiosidades</a></li>
+            <li><a href="contato.html" target="_self"><span class="nav-icon">✉️</span>Contato</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar-footer">
+        <p>Desenvolvido por <strong>Aleeh PNP</strong></p>
+        <p style="margin-top:6px;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdazl579@gmail.com" target="_blank">E-mail</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/alexandre00almeida" target="_blank">GitHub</a>
+        </p>
+    </div>
+</aside>
+
+<header id="topbar">
+    <button id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        ☰ Menu
+    </button>
+</header>
+
+<main class="centralizado">
+    <section id="calculadora-app">
+        <h2>Calculadora Web</h2>
+
+        <div class="caixa-calculadora">
+            <div class="campo-form">
+                <label for="num1">Primeiro Número:</label>
+                <input type="number" id="num1" placeholder="Ex: 10" step="any">
+            </div>
+            <div class="campo-form">
+                <label for="operacao">Operação:</label>
+                <select id="operacao">
+                    <option value="+">Somar (+)</option>
+                    <option value="-">Subtrair (-)</option>
+                    <option value="*">Multiplicar (*)</option>
+                    <option value="/">Dividir (/)</option>
+                </select>
+            </div>
+            <div class="campo-form">
+                <label for="num2">Segundo Número:</label>
+                <input type="number" id="num2" placeholder="Ex: 5" step="any">
+            </div>
+            <button type="button" id="btn-calcular" style="width:100%; margin-top:8px;">Calcular</button>
+            <div id="resultado-calculadora"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    Desenvolvido por <strong>Aleeh PNP</strong> &nbsp;|&nbsp;
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdazl579@gmail.com" target="_blank">E-mail</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/alexandre00almeida" target="_blank">GitHub</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

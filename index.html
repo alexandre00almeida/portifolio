@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre C. Almeida | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="extensao_00.css">
+    <style>
+        body { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            min-height: 100vh; 
+        }
+
+        #page {
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: calc(100vh - var(--header-h) - 80px);
+            padding: 24px;
+        }
+
+        .bem-vindo {
+            background: var(--bg2);
+            border: 1px solid var(--bg3);
+            border-radius: var(--radius-lg);
+            padding: 52px 60px;
+            max-width: 580px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            z-index: 10;
+        }
+        .bem-vindo h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text);
+            line-height: 1.15;
+        }
+        .bem-vindo h2 span { color: var(--accent); }
+        .welcome-divider {
+            width: 44px; height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+            margin: 18px auto;
+        }
+        .bem-vindo p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 540px) {
+            .bem-vindo { padding: 36px 24px; }
+            .bem-vindo h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+<div id="overlay"></div>
+
+<aside id="sidebar" aria-label="Menu lateral">
+    <div class="sidebar-header">
+        <h1>Alexandre C. Almeida</h1>
+        <p class="subtitulo">Estudante de Tecnologia da Informação</p>
+    </div>
+    <nav class="sidebar-nav">
+        <ul>
+            <li><a href="sobre.html" target="_self"><span class="nav-icon">👤</span>Sobre Mim</a></li>
+            <li><a href="habilidades.html" target="_self"><span class="nav-icon">⚡</span>Habilidades</a></li>
+            <li><a href="curiosidades.html" target="_self"><span class="nav-icon">🔍</span>Curiosidades</a></li>
+            <li><a href="contato.html" target="_self"><span class="nav-icon">✉️</span>Contato</a></li>
+            <li><a href="calculadora.html" target="_self"><span class="nav-icon">🧮</span>Calculadora</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar-footer">
+        <p>Desenvolvido por <strong>Aleeh PNP</strong></p>
+        <p style="margin-top:6px;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdazl579@gmail.com" target="_blank">E-mail</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/alexandre00almeida" target="_blank">GitHub</a>
+        </p>
+    </div>
+</aside>
+
+<header id="topbar">
+    <button id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        ☰ Menu
+    </button>
+</header>
+
+<main id="page">
+    <section class="bem-vindo" aria-label="Bem-vindo">
+        <h2>Bem-Vindo</h2>
+        <div class="welcome-divider"></div>
+        <p>
+            Olá, sou <strong style="color:var(--text)">Alexandre C. Almeida</strong>.<br>
+            Utilize o menu para navegar e conhecer mais sobre meu portfólio.
+        </p>
+    </section>
+</main>
+
+<footer>
+    Desenvolvido por <strong>Aleeh PNP</strong> &nbsp;|&nbsp;
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdazl579@gmail.com" target="_blank">E-mail</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/alexandre00almeida" target="_blank">GitHub</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
