@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Alexandre C. Almeida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="extensao_00.css">
+    <style>
+        .sobre-bloco { margin-top: 28px; }
+        .avatar-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 28px auto 8px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: var(--bg3);
+            border: 4px solid var(--accent);
+            box-shadow: 0 4px 20px rgba(255,77,77,0.25);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 2.2rem;
+            color: var(--accent);
+        }
+        .lista-projetos {
+            list-style: disc;
+            padding-left: 22px;
+            max-width: 620px;
+            margin: 12px auto 0;
+            text-align: left;
+        }
+        .lista-projetos li { color: var(--muted); margin-bottom: 9px; font-size: 0.97rem; }
+        .lista-projetos li strong { color: var(--text); }
+    </style>
+</head>
+<body class="page-body">
+
+<canvas id="particle-canvas"></canvas>
+<div id="overlay"></div>
+
+<aside id="sidebar" aria-label="Menu lateral">
+    <div class="sidebar-header">
+        <h1>Alexandre C. Almeida</h1>
+        <p class="subtitulo">Estudante de Tecnologia da Informação</p>
+    </div>
+    <nav class="sidebar-nav">
+        <ul>
+            <li><a href="index.html" target="_self"><span class="nav-icon">🏠</span>Início</a></li>
+            <li><a href="habilidades00.html" target="_self"><span class="nav-icon">⚡</span>Habilidades</a></li>
+            <li><a href="curiosidades.html" target="_self"><span class="nav-icon">🔍</span>Curiosidades</a></li>
+            <li><a href="contato00.html" target="_self"><span class="nav-icon">✉️</span>Contato</a></li>
+            <li><a href="calculadora.html" target="_self"><span class="nav-icon">🧮</span>Calculadora</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar-footer">
+        <p>Desenvolvido por <strong>Aleeh PNP</strong></p>
+        <p style="margin-top:6px;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdazl579@gmail.com" target="_blank">E-mail</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/alexandre00almeida" target="_blank">GitHub</a>
+        </p>
+    </div>
+</aside>
+
+<header id="topbar">
+    <button id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        ☰ Menu
+    </button>
+</header>
+
+<main class="centralizado">
+    <section id="sobre">
+        <h2>Sobre o Alex</h2>
+        <p>Alex tem 18 anos, estuda Tecnologia da Informação e tem foco principal no desenvolvimento com Inteligência Artificial.</p>
+
+        <div class="sobre-bloco">
+            <h3>Como comecei</h3>
+            <!-- Personalize este parágrafo com sua própria história -->
+            <p>[Escreva aqui como você começou a programar — o que despertou seu interesse e o que mais gosta na área.]</p>
+        </div>
+
+        <div class="sobre-bloco">
+            <h3>No que estou trabalhando</h3>
+            <p>Além dos trabalhos da escola, gosto de desenvolver projetos próprios:</p>
+            <ul class="lista-projetos">
+                <li><strong>Grana na Régua</strong> — aplicação web em React para controle de finanças pessoais, com integração à API da Anthropic para categorização automática de gastos e um assistente conversacional. Desenvolvido para o IA Challenge 2026.</li>
+                <li><strong>Módulo de Categorias</strong> — sistema CRUD em ASP.NET Core (Razor Pages) com Dapper e MySQL, parte de um sistema de gestão de loja.</li>
+                <li><strong>Este portfólio</strong> — construído do zero em HTML, CSS e JavaScript, com tema escuro e efeito de partículas animadas.</li>
+            </ul>
+        </div>
+
+        <div class="sobre-bloco">
+            <h3>Objetivo</h3>
+            <!-- Personalize este parágrafo com seu objetivo real -->
+            <p>[Escreva aqui seu objetivo de curto prazo — ex: conseguir um estágio, entrar na faculdade, aprofundar em uma tecnologia específica.]</p>
+        </div>
+
+        <div class="sobre-bloco">
+            <p>Fora dos códigos, gosta muito de comer, jogar bola e sair de casa para fazer qualquer coisa.</p>
+            <p>Sim, Alex está falando de si em terceira pessoa.</p>
+            <p>Meu ídolo é o menino Ney.</p>
+        </div>
+
+        <!-- Troque o div abaixo por: <img class="foto-perfil" src="sua-foto.jpg" alt="Foto de Alexandre"> -->
+        <div class="avatar-placeholder">AA</div>
+        <p><em>Troque este espaço por uma foto sua</em></p>
+    </section>
+</main>
+
+<footer>
+    Desenvolvido por <strong>Aleeh PNP</strong> &nbsp;|&nbsp;
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdazl579@gmail.com" target="_blank">E-mail</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/alexandre00almeida" target="_blank">GitHub</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

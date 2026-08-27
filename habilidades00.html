@@ -8,6 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="extensao_00.css">
+    <style>
+        .skill-category { margin-bottom: 26px; }
+        .skill-category:last-child { margin-bottom: 0; }
+        .skill-note {
+            font-size: 0.85rem;
+            color: var(--muted);
+            font-style: italic;
+            text-align: center;
+            margin-top: -2px;
+        }
+    </style>
 </head>
 <body class="page-body">
 
@@ -22,7 +33,7 @@
     <nav class="sidebar-nav">
         <ul>
             <li><a href="index.html" target="_self"><span class="nav-icon">🏠</span>Início</a></li>
-            <li><a href="sobre.html" target="_self"><span class="nav-icon">👤</span>Sobre Mim</a></li>
+            <li><a href="sobre00.html" target="_self"><span class="nav-icon">👤</span>Sobre Mim</a></li>
             <li><a href="curiosidades.html" target="_self"><span class="nav-icon">🔍</span>Curiosidades</a></li>
             <li><a href="contato00.html" target="_self"><span class="nav-icon">✉️</span>Contato</a></li>
             <li><a href="calculadora.html" target="_self"><span class="nav-icon">🧮</span>Calculadora</a></li>
@@ -47,13 +58,42 @@
 <main class="centralizado">
     <section id="habilidades">
         <h2>Habilidades Técnicas</h2>
-        <ul>
-            <li><strong>HTML5 Semântico:</strong> Estruturação limpa e acessível.</li>
-            <li><strong>CSS3:</strong> Layouts responsivos, Flexbox e customização de Dark Mode.</li>
-            <li><strong>Lógica com JS:</strong> Desenvolvimento de aplicações dinâmicas e validações.</li>
-            <li><strong>Versionamento com Git:</strong> Controle de código e histórico de desenvolvimento.</li>
-            <li><strong>Organização Estrutural:</strong> Arquitetura profissional de arquivos e pastas.</li>
-        </ul>
+
+        <div class="skill-category">
+            <h3>Front-end</h3>
+            <ul>
+                <li><strong>HTML5 Semântico:</strong> Estruturação limpa e acessível.</li>
+                <li><strong>CSS3:</strong> Layouts responsivos, Flexbox e customização de Dark Mode.</li>
+                <li><strong>JavaScript:</strong> Lógica de aplicações dinâmicas, manipulação de DOM e animações em Canvas.</li>
+            </ul>
+            <p class="skill-note">Aplicado neste próprio portfólio — incluindo o efeito de partículas animadas na tela.</p>
+        </div>
+
+        <div class="skill-category">
+            <h3>Back-end</h3>
+            <ul>
+                <li><strong>C# / ASP.NET Core (Razor Pages):</strong> Construção de páginas e regras de negócio no servidor.</li>
+                <li><strong>Dapper:</strong> Acesso a dados e consultas SQL de forma leve.</li>
+                <li><strong>MySQL:</strong> Modelagem e consultas em banco de dados relacional.</li>
+            </ul>
+            <p class="skill-note">Aplicado no módulo de Categorias (CRUD) de um sistema de gestão de loja.</p>
+        </div>
+
+        <div class="skill-category">
+            <h3>Outras Tecnologias</h3>
+            <ul>
+                <li><strong>React:</strong> Construção de interfaces e integração com APIs.</li>
+            </ul>
+            <p class="skill-note">Usado no desenvolvimento do "Grana na Régua", app de finanças pessoais com IA para categorização de gastos e assistente conversacional, feito para o IA Challenge 2026.</p>
+        </div>
+
+        <div class="skill-category">
+            <h3>Ferramentas</h3>
+            <ul>
+                <li><strong>Git &amp; GitHub:</strong> Controle de versão e histórico de desenvolvimento.</li>
+                <li><strong>Organização Estrutural:</strong> Arquitetura profissional de arquivos e pastas.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="competencias">
